@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1FA786904F37CEFE800599 /* Pods_TFG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B230E6B6A4D6A10498989E2 /* Pods_TFG.framework */; };
 		5FFCCE7F20DDDF5D001C9F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCCE7E20DDDF5D001C9F7B /* AppDelegate.swift */; };
 		5FFCCE8120DDDF5D001C9F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCCE8020DDDF5D001C9F7B /* ViewController.swift */; };
 		5FFCCE8420DDDF5D001C9F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCCE8220DDDF5D001C9F7B /* Main.storyboard */; };
 		5FFCCE8620DDDF60001C9F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCCE8520DDDF60001C9F7B /* Assets.xcassets */; };
 		5FFCCE8920DDDF60001C9F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCCE8720DDDF60001C9F7B /* LaunchScreen.storyboard */; };
+		5FFCCE9520DDDFD8001C9F7B /* Tecnico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCCE9420DDDFD8001C9F7B /* Tecnico.swift */; };
+		5FFCCE9720DDE182001C9F7B /* Empresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCCE9620DDE182001C9F7B /* Empresa.swift */; };
+		5FFCCE9920DDE487001C9F7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCCE9820DDE487001C9F7B /* GoogleService-Info.plist */; };
+		5FFCCE9B20DDE7B1001C9F7B /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCCE9A20DDE7B1001C9F7B /* WelcomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B230E6B6A4D6A10498989E2 /* Pods_TFG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFCCE7B20DDDF5D001C9F7B /* TFG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFCCE7E20DDDF5D001C9F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FFCCE8020DDDF5D001C9F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		5FFCCE8520DDDF60001C9F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FFCCE8820DDDF60001C9F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FFCCE8A20DDDF60001C9F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FFCCE9420DDDFD8001C9F7B /* Tecnico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tecnico.swift; sourceTree = "<group>"; };
+		5FFCCE9620DDE182001C9F7B /* Empresa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empresa.swift; sourceTree = "<group>"; };
+		5FFCCE9820DDE487001C9F7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5FFCCE9A20DDE7B1001C9F7B /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		E231667FB375BC1E214DC33B /* Pods-TFG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFG.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFG/Pods-TFG.release.xcconfig"; sourceTree = "<group>"; };
+		E44E77C2BE180757EDF2DB76 /* Pods-TFG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TFG/Pods-TFG.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1FA786904F37CEFE800599 /* Pods_TFG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D6729040E083F58B1409B60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E44E77C2BE180757EDF2DB76 /* Pods-TFG.debug.xcconfig */,
+				E231667FB375BC1E214DC33B /* Pods-TFG.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C06BDC63542CA3914BE7EBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B230E6B6A4D6A10498989E2 /* Pods_TFG.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5FFCCE7220DDDF5D001C9F7B = {
 			isa = PBXGroup;
 			children = (
 				5FFCCE7D20DDDF5D001C9F7B /* TFG */,
 				5FFCCE7C20DDDF5D001C9F7B /* Products */,
+				0D6729040E083F58B1409B60 /* Pods */,
+				5C06BDC63542CA3914BE7EBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +87,41 @@
 			isa = PBXGroup;
 			children = (
 				5FFCCE7E20DDDF5D001C9F7B /* AppDelegate.swift */,
+				5FFCCE9320DDDFB0001C9F7B /* Data Model */,
+				5FFCCE9220DDDFA5001C9F7B /* Controller */,
+				5FFCCE9020DDDF91001C9F7B /* View */,
 				5FFCCE8020DDDF5D001C9F7B /* ViewController.swift */,
 				5FFCCE8220DDDF5D001C9F7B /* Main.storyboard */,
 				5FFCCE8520DDDF60001C9F7B /* Assets.xcassets */,
 				5FFCCE8720DDDF60001C9F7B /* LaunchScreen.storyboard */,
 				5FFCCE8A20DDDF60001C9F7B /* Info.plist */,
+				5FFCCE9820DDE487001C9F7B /* GoogleService-Info.plist */,
 			);
 			path = TFG;
+			sourceTree = "<group>";
+		};
+		5FFCCE9020DDDF91001C9F7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FFCCE9220DDDFA5001C9F7B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FFCCE9A20DDE7B1001C9F7B /* WelcomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FFCCE9320DDDFB0001C9F7B /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FFCCE9420DDDFD8001C9F7B /* Tecnico.swift */,
+				5FFCCE9620DDE182001C9F7B /* Empresa.swift */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FFCCE8D20DDDF60001C9F7B /* Build configuration list for PBXNativeTarget "TFG" */;
 			buildPhases = (
+				05BECC48559FFCC0CBF27D25 /* [CP] Check Pods Manifest.lock */,
 				5FFCCE7720DDDF5D001C9F7B /* Sources */,
 				5FFCCE7820DDDF5D001C9F7B /* Frameworks */,
 				5FFCCE7920DDDF5D001C9F7B /* Resources */,
+				B76D42DBE6DA555451962F84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FFCCE8920DDDF60001C9F7B /* LaunchScreen.storyboard in Resources */,
+				5FFCCE9920DDE487001C9F7B /* GoogleService-Info.plist in Resources */,
 				5FFCCE8620DDDF60001C9F7B /* Assets.xcassets in Resources */,
 				5FFCCE8420DDDF5D001C9F7B /* Main.storyboard in Resources */,
 			);
@@ -130,13 +193,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05BECC48559FFCC0CBF27D25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B76D42DBE6DA555451962F84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TFG/Pods-TFG-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFG/Pods-TFG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FFCCE7720DDDF5D001C9F7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5FFCCE8120DDDF5D001C9F7B /* ViewController.swift in Sources */,
+				5FFCCE9B20DDE7B1001C9F7B /* WelcomeVC.swift in Sources */,
+				5FFCCE9720DDE182001C9F7B /* Empresa.swift in Sources */,
 				5FFCCE7F20DDDF5D001C9F7B /* AppDelegate.swift in Sources */,
+				5FFCCE9520DDDFD8001C9F7B /* Tecnico.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +399,7 @@
 		};
 		5FFCCE8E20DDDF60001C9F7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E44E77C2BE180757EDF2DB76 /* Pods-TFG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,7 +409,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.OnviKa.TFG;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OnviKa.TFG-ePRL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,6 +418,7 @@
 		};
 		5FFCCE8F20DDDF60001C9F7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E231667FB375BC1E214DC33B /* Pods-TFG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,7 +428,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.OnviKa.TFG;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OnviKa.TFG-ePRL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
