@@ -17,10 +17,11 @@ class WelcomeVC: UIViewController
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if Auth.auth().currentUser != nil
+        /*if Auth.auth().currentUser != nil
         {
             performSegue(withIdentifier: "goToHome", sender: self)
         }
+         */
     }
 
     override func didReceiveMemoryWarning() {

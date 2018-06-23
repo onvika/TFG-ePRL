@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3D1FA786904F37CEFE800599 /* Pods_TFG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B230E6B6A4D6A10498989E2 /* Pods_TFG.framework */; };
 		5FFC16AD20DE0AAD00B4B6E3 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC16AC20DE0AAD00B4B6E3 /* RegisterVC.swift */; };
+		5FFC16AF20DE0E9500B4B6E3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC16AE20DE0E9500B4B6E3 /* HomeViewController.swift */; };
+		5FFC16B120DE2B2500B4B6E3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC16B020DE2B2500B4B6E3 /* ProfileVC.swift */; };
+		5FFC16B320DE452400B4B6E3 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC16B220DE452400B4B6E3 /* ProfileCell.swift */; };
 		5FFCCE7F20DDDF5D001C9F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCCE7E20DDDF5D001C9F7B /* AppDelegate.swift */; };
 		5FFCCE8620DDDF60001C9F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCCE8520DDDF60001C9F7B /* Assets.xcassets */; };
 		5FFCCE9520DDDFD8001C9F7B /* Tecnico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCCE9420DDDFD8001C9F7B /* Tecnico.swift */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		1B230E6B6A4D6A10498989E2 /* Pods_TFG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFC16AC20DE0AAD00B4B6E3 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		5FFC16AE20DE0E9500B4B6E3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5FFC16B020DE2B2500B4B6E3 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		5FFC16B220DE452400B4B6E3 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		5FFCCE7B20DDDF5D001C9F7B /* TFG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFCCE7E20DDDF5D001C9F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FFCCE8520DDDF60001C9F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				5FFCCE9F20DDF570001C9F7B /* Main.storyboard */,
+				5FFC16B220DE452400B4B6E3 /* ProfileCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +121,8 @@
 				5FFCCE9A20DDE7B1001C9F7B /* WelcomeVC.swift */,
 				5FFCCEA120DE04F3001C9F7B /* LoginVC.swift */,
 				5FFC16AC20DE0AAD00B4B6E3 /* RegisterVC.swift */,
+				5FFC16AE20DE0E9500B4B6E3 /* HomeViewController.swift */,
+				5FFC16B020DE2B2500B4B6E3 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,7 +269,10 @@
 				5FFCCE9720DDE182001C9F7B /* Empresa.swift in Sources */,
 				5FFCCE7F20DDDF5D001C9F7B /* AppDelegate.swift in Sources */,
 				5FFC16AD20DE0AAD00B4B6E3 /* RegisterVC.swift in Sources */,
+				5FFC16B120DE2B2500B4B6E3 /* ProfileVC.swift in Sources */,
 				5FFCCE9520DDDFD8001C9F7B /* Tecnico.swift in Sources */,
+				5FFC16B320DE452400B4B6E3 /* ProfileCell.swift in Sources */,
+				5FFC16AF20DE0E9500B4B6E3 /* HomeViewController.swift in Sources */,
 				5FFCCEA220DE04F3001C9F7B /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
