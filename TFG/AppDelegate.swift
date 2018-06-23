@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import RealmSwift
 
 
 @UIApplicationMain
@@ -22,6 +22,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Inicializar la conexion con Firebase
         FirebaseApp.configure()
+        
+       print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+        let emp = Empresa()
+        emp.nombre = "Mercadona"
+        emp.direccion = "Calle Valencia"
+        emp.email = "a@b.com"
+        emp.encargado = "Juan P."
+        emp.numTrabajadores = "34"
+        
+        
+        //Realm
+        do{
+            let realm = try Realm()
+            try realm.write {
+                realm.add(emp)
+            }
+        }
+        catch
+        {
+            print("Error inicializando Realm \(error)")
+        }
+        
         
         return true
     }
