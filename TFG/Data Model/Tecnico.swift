@@ -16,18 +16,21 @@ class Tecnico
     var email: String?
     var password: String?
     var titulacion: String = ""
-    var foto: UIImage?
     
-    init(n: String, ap: String, titulo: String, img: UIImage)
+    init()
+    {
+        nombre = ""
+        apellido = ""
+        titulacion = ""
+        email =  ""
+        password = ""
+    }
+    
+    init(n: String, ap: String, titulo: String, correo: String, contraseña: String)
     {
         nombre = n
         apellido = ap
         titulacion = titulo
-        foto = img
-    }
-    
-    init (correo: String, contraseña: String)
-    {
         email = correo
         password = contraseña
     }

@@ -58,9 +58,14 @@ class LoginVC: UIViewController
     
     
     
-    
-    
-    
+
+    @IBAction func atrasButtonPressed(_ sender: Any)
+    {
+        if Auth.auth().currentUser == nil
+        {
+            self.performSegue(withIdentifier: "welcomeVC", sender: self)
+        }
+    }
     
 }
 

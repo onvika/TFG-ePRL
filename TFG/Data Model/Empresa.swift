@@ -18,17 +18,6 @@ class Empresa: Object
     @objc dynamic var email: String?
     @objc dynamic var direccion: String?
     @objc dynamic var numTrabajadores: String?
-  
-    
-    /*init(no: String, trab: String, phone: String, correo: String, dire: String, numTra: String, icon: UIImage )
-    {
-        nombre = no
-        encargado = trab
-        telefono = phone
-        email = correo
-        direccion = dire
-        numTrabajadores = numTra
-        logo = icon
-    }*/
+    @objc dynamic var logo: String?
 
 }

@@ -8,23 +8,27 @@
 
 import UIKit
 import RealmSwift
+import Firebase
 
-class EmpresaViewController: UIViewController {
 
+class EmpresaViewController: UIViewController
+{
     
     @IBOutlet weak var empTableView: UITableView!
     
-    
-    var empresas: [Empresa] = []
+    let realm = try! Realm()
+    var empresas = [Empresa]()
+    var empresa = Empresa()
     
     //crear random logos para la empresa
-    let logoEmpresa = ["empresa1", "empresa3", "empresa4", "empresa5"]
+    let logosEmpresa = ["empresa1", "empresa2", "empresa3", "empresa4", "empresa5"]
+    var randomNumber: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        empresas = crearEmpresa()
+        guardarEmpresa()
         
         //tableView.delegate = self
         //tableView.dataSource = self
@@ -35,57 +39,34 @@ class EmpresaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    func crearEmpresa() -> [Empresa]
+    func guardarEmpresa()
     {
+        empresa.logo = logosEmpresa[randomNumber]
+        empresas.append(empresa)
         
-        let emp1 = Empresa()
-        emp1.nombre = "Mercadona"
-        emp1.direccion = "Calle Valencia"
-        emp1.email = "a@b.com"
-        emp1.encargado = "Juan P."
-        emp1.numTrabajadores = "34"
-        
-        let emp2 = Empresa()
-        emp2.nombre = "Constructora Santiago"
-        emp2.direccion = "Avenida Francia"
-        emp2.email = "a@b.com"
-        emp2.encargado = "Antonio P."
-        emp2.numTrabajadores = "12"
-        
-        let emp3 = Empresa()
-        emp3.nombre = "Satreria"
-        emp3.direccion = "Barcelona la grande"
-        emp3.email = "a@b.com"
-        emp3.encargado = "Francisco H."
-        emp3.numTrabajadores = "58"
-        
-        print(Realm.Configuration.defaultConfiguration.fileURL)
-        
-        
-        //Realm
         do{
-            let realm = try Realm()
+            
             try realm.write
             {
-                realm.add(emp1)
-                realm.add(emp2)
-                realm.add(emp3)
+                realm.add(empresas)
             }
         }
         catch
         {
             print("Error inicializando Realm \(error)")
+        
         }
-        
-        empresas.append(emp1)
-        empresas.append(emp2)
-        empresas.append(emp3)
-        
-        return empresas
-    }
+    
+
+    
 }
 
+    @IBAction func atrasButtonPressed(_ sender: Any)
+    {
+            self.performSegue(withIdentifier: "goToHome", sender: self)
+    }
+}
+    
 extension EmpresaViewController: UITableViewDataSource, UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -103,22 +84,13 @@ extension EmpresaViewController: UITableViewDataSource, UITableViewDelegate
         let emp = empresas[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaEmpresa") as! EmpresaCell
         
-        let item = UIImage(named: logoEmpresa[indexPath.row])
-        let icono = UIImageView(image: item)
         cell.encargadoEmp?.text = emp.encargado
         cell.nombreEmp?.text = emp.nombre
-        setStyleCirculeForImage(img: icono)
-        cell.logoEmpresa?.image = item
+        cell.logoEmpresa?.image = UIImage (named: emp.logo!)
         
         return cell
     }
     
 }
-
-
-
-
-
-
 
 

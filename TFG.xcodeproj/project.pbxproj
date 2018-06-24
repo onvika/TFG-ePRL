@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3D1FA786904F37CEFE800599 /* Pods_TFG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B230E6B6A4D6A10498989E2 /* Pods_TFG.framework */; };
+		5F7A194B20DF54A8006B2492 /* AnadeEmpresaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A194A20DF54A8006B2492 /* AnadeEmpresaVC.swift */; };
+		5F7A194D20DF6DAE006B2492 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A194C20DF6DAE006B2492 /* PerfilViewController.swift */; };
+		5F7A194F20DF7004006B2492 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A194E20DF7004006B2492 /* ProfileCell.swift */; };
+		5FA7286520DFE66200F6B524 /* Reglamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7286420DFE66200F6B524 /* Reglamento.swift */; };
+		5FA7286720DFEAA000F6B524 /* Normativa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7286620DFEAA000F6B524 /* Normativa.swift */; };
+		5FA7286920DFFE3000F6B524 /* ReglamentoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7286820DFFE3000F6B524 /* ReglamentoCell.swift */; };
+		5FA7286B20E0027A00F6B524 /* ReglamentoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7286A20E0027A00F6B524 /* ReglamentoVC.swift */; };
 		5FE6926E20DE8BDC008CC85E /* EmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE6926D20DE8BDC008CC85E /* EmpresaViewController.swift */; };
 		5FE6927020DE8F8B008CC85E /* EmpresaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE6926F20DE8F8B008CC85E /* EmpresaCell.swift */; };
 		5FFC16AD20DE0AAD00B4B6E3 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC16AC20DE0AAD00B4B6E3 /* RegisterVC.swift */; };
@@ -25,6 +32,13 @@
 
 /* Begin PBXFileReference section */
 		1B230E6B6A4D6A10498989E2 /* Pods_TFG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7A194A20DF54A8006B2492 /* AnadeEmpresaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnadeEmpresaVC.swift; sourceTree = "<group>"; };
+		5F7A194C20DF6DAE006B2492 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		5F7A194E20DF7004006B2492 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		5FA7286420DFE66200F6B524 /* Reglamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reglamento.swift; sourceTree = "<group>"; };
+		5FA7286620DFEAA000F6B524 /* Normativa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Normativa.swift; sourceTree = "<group>"; };
+		5FA7286820DFFE3000F6B524 /* ReglamentoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReglamentoCell.swift; sourceTree = "<group>"; };
+		5FA7286A20E0027A00F6B524 /* ReglamentoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReglamentoVC.swift; sourceTree = "<group>"; };
 		5FE6926D20DE8BDC008CC85E /* EmpresaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresaViewController.swift; sourceTree = "<group>"; };
 		5FE6926F20DE8F8B008CC85E /* EmpresaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresaCell.swift; sourceTree = "<group>"; };
 		5FFC16AC20DE0AAD00B4B6E3 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -110,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				5FFCCE9F20DDF570001C9F7B /* Main.storyboard */,
+				5FA7286820DFFE3000F6B524 /* ReglamentoCell.swift */,
+				5F7A194E20DF7004006B2492 /* ProfileCell.swift */,
 				5FE6926F20DE8F8B008CC85E /* EmpresaCell.swift */,
 			);
 			path = View;
@@ -123,6 +139,9 @@
 				5FFC16AC20DE0AAD00B4B6E3 /* RegisterVC.swift */,
 				5FE6926D20DE8BDC008CC85E /* EmpresaViewController.swift */,
 				5FFC16AE20DE0E9500B4B6E3 /* HomeViewController.swift */,
+				5F7A194C20DF6DAE006B2492 /* PerfilViewController.swift */,
+				5F7A194A20DF54A8006B2492 /* AnadeEmpresaVC.swift */,
+				5FA7286A20E0027A00F6B524 /* ReglamentoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,6 +151,8 @@
 			children = (
 				5FFCCE9420DDDFD8001C9F7B /* Tecnico.swift */,
 				5FFCCE9620DDE182001C9F7B /* Empresa.swift */,
+				5FA7286420DFE66200F6B524 /* Reglamento.swift */,
+				5FA7286620DFEAA000F6B524 /* Normativa.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -265,13 +286,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7A194B20DF54A8006B2492 /* AnadeEmpresaVC.swift in Sources */,
+				5FA7286B20E0027A00F6B524 /* ReglamentoVC.swift in Sources */,
 				5FFCCE9B20DDE7B1001C9F7B /* WelcomeVC.swift in Sources */,
 				5FFCCE9720DDE182001C9F7B /* Empresa.swift in Sources */,
 				5FE6926E20DE8BDC008CC85E /* EmpresaViewController.swift in Sources */,
 				5FFCCE7F20DDDF5D001C9F7B /* AppDelegate.swift in Sources */,
+				5FA7286920DFFE3000F6B524 /* ReglamentoCell.swift in Sources */,
+				5FA7286720DFEAA000F6B524 /* Normativa.swift in Sources */,
 				5FFC16AD20DE0AAD00B4B6E3 /* RegisterVC.swift in Sources */,
+				5F7A194D20DF6DAE006B2492 /* PerfilViewController.swift in Sources */,
 				5FFCCE9520DDDFD8001C9F7B /* Tecnico.swift in Sources */,
 				5FFC16AF20DE0E9500B4B6E3 /* HomeViewController.swift in Sources */,
+				5FA7286520DFE66200F6B524 /* Reglamento.swift in Sources */,
+				5F7A194F20DF7004006B2492 /* ProfileCell.swift in Sources */,
 				5FFCCEA220DE04F3001C9F7B /* LoginVC.swift in Sources */,
 				5FE6927020DE8F8B008CC85E /* EmpresaCell.swift in Sources */,
 			);

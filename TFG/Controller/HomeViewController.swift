@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
         {
             try Auth.auth().signOut()
             //self.performSegue(withIdentifier: "welcomeVC", sender: self)
-            navigationController?.popToRootViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
         }
         catch
         {
