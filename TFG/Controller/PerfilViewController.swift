@@ -46,15 +46,14 @@ class PerfilViewController: UIViewController {
         img.layer.cornerRadius = img.frame.size.width / 2
         img.clipsToBounds = true
     }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        let destinoVC: RegisterVC = segue.destination as! RegisterVC
-        datos = destinoVC.datosTecnico
-        
-    }
-
    
+    
+    @IBAction func atrasButtonPressed(_ sender: UIButton)
+    {
+        self.performSegue(withIdentifier: "goToHome", sender: self)
+    }
+    
+    
     
     @IBAction func logOutPressed(_ sender: UIButton)
     {
@@ -62,7 +61,9 @@ class PerfilViewController: UIViewController {
         
         do {
             try Auth.auth().signOut()
-            navigationController?.popToRootViewController(animated: true)
+            
+            self.performSegue(withIdentifier: "goToLogin", sender: self)
+            //navigationController?.popToRootViewController(animated: true)
         }
         catch let logoutError{
             print("Ha habido un error al desconectarse \(logoutError)")

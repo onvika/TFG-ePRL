@@ -23,8 +23,7 @@ class ReglamentoCell: UITableViewCell {
     func updateUI()
     {
         reglamentoTituloView?.text = reglamento?.titulo
-        
-        reglamentoDescripcionView?.text = reglamento?.description
+        reglamentoDescripcionView?.text = reglamento?.descripcion
     }
     
 }

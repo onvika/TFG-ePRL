@@ -11,12 +11,14 @@ import UIKit
 class Reglamento
 {
     var titulo: String
-    var description: String
-
-    init(titulado: String, description: String)
+    var descripcion: String
+    var docpdf: String 
+    
+    init(titulado: String, descripcion: String, documentacion: String)
     {
         self.titulo = titulado
-        self.description = description
+        self.descripcion = descripcion
+        self.docpdf = documentacion
     }
 
 }

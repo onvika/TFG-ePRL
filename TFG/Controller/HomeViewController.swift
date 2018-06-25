@@ -40,4 +40,14 @@ class HomeViewController: UIViewController {
         
     }
     
+    
+    
+    @IBAction func reglamentoButtonPressed(_ sender: UIButton)
+    {
+        self.performSegue(withIdentifier: "goToReglamentos", sender: self)
+        
+    }
+    
+    
+    
 }

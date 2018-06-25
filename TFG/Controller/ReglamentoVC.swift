@@ -13,9 +13,10 @@ class ReglamentoVC: UIViewController
 
     @IBOutlet weak var tableView: UITableView!
     
+    var selectedReglamento: Reglamento?
     
     // MARK: - Data Model
-    var reglamentos = Normativa.getNormativa()[0].reglamentos
+    var normativa: [Normativa] = Normativa.getNormativa()
     
     override func viewDidLoad()
     {
@@ -24,7 +25,8 @@ class ReglamentoVC: UIViewController
         
         tableView.delegate = self
         tableView.dataSource = self
-        
+        tableView.estimatedRowHeight = tableView.rowHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +34,14 @@ class ReglamentoVC: UIViewController
         // Dispose of any resources that can be recreated.
         
     }
+    
+
+    @IBAction func atrasButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToHome", sender: self)
+    }
+    
+    
+    
 }
 
 extension ReglamentoVC: UITableViewDelegate, UITableViewDataSource
@@ -39,21 +49,65 @@ extension ReglamentoVC: UITableViewDelegate, UITableViewDataSource
     
     // MARK: - Table view data source
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return normativa.count
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return reglamentos.count
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return normativa[section].reglamentos.count
     }
     
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaReglamento", for: indexPath) as! ReglamentoCell
         
-        let regl = reglamentos[indexPath.row]
-        cell.reglamentoTituloView?.text = regl.titulo
-        //cell.reglamentoDescripcionView.text = r.description
-        
+        //let leyes = normativa[indexPath.section]
+        //cell.reglamentoTituloView?.text = reg.titulo
+        //cell.reglamentoDescripcionView?.text = reg.description
+    
+    
+    cell.reglamento = normativa[indexPath.section].reglamentos[indexPath.row]
+    
+    
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
+    {
+        let normas = normativa[section]
+        return normas.name
+    }
+
+    
+    
+    //MARK:- UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let normas = normativa[indexPath.section]
+        let reglas = normas.reglamentos[indexPath.row]
+        
+        selectedReglamento = reglas
+        performSegue(withIdentifier: "goToDetalles", sender: nil)
+    }
+    
+    //Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "goToDetalles"
+        {
+            let reglamentoDetalleVC = segue.destination as! ReglamentoDetailVC
+            
+            reglamentoDetalleVC.reglamento = selectedReglamento
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
