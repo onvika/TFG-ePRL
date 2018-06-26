@@ -36,13 +36,16 @@ class RegisterVC: UIViewController {
     }
     
     
-    func crearDatosTecnico()
+    func crearDatosTecnico() -> [String]
     {
+        var datos: [String] = []
         let fullName = nombreTextField.text! + " " + apellidoTextField.text!
-        datosTecnico.append(fullName)
-        datosTecnico.append(correoTextField.text!)
-        datosTecnico.append("................")
-        datosTecnico.append(especialidadTextField.text!)
+        datos.append(fullName)
+        datos.append(correoTextField.text!)
+        datos.append("................")
+        datos.append(especialidadTextField.text!)
+        
+        return datos
     }
     
     
@@ -57,8 +60,7 @@ class RegisterVC: UIViewController {
             else
             {
                 print("Registro realizado !")
-                self.crearDatosTecnico()
-                print("Datos del Tecnico: \(self.datosTecnico)")
+                self.datosTecnico = self.crearDatosTecnico()
                 SVProgressHUD.dismiss()
                 self.performSegue(withIdentifier: "goToHome", sender: self)
             }

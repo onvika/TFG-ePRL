@@ -26,6 +26,8 @@
 		5FA7287F20E0AED600F6B524 /* ntp832.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5FA7287620E0AED600F6B524 /* ntp832.pdf */; };
 		5FA7288120E0B93D00F6B524 /* pvd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5FA7288020E0B93D00F6B524 /* pvd.pdf */; };
 		5FA7288320E1109A00F6B524 /* DetalleEmpresaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7288220E1109A00F6B524 /* DetalleEmpresaTableViewController.swift */; };
+		5FC1E54620E1EA9C005DC09E /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1E54520E1EA9C005DC09E /* CalendarCell.swift */; };
+		5FC1E54820E1ECEB005DC09E /* CalendarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1E54720E1ECEB005DC09E /* CalendarioViewController.swift */; };
 		5FE6926E20DE8BDC008CC85E /* EmpresaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE6926D20DE8BDC008CC85E /* EmpresaViewController.swift */; };
 		5FE6927020DE8F8B008CC85E /* EmpresaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE6926F20DE8F8B008CC85E /* EmpresaCell.swift */; };
 		5FFC16AD20DE0AAD00B4B6E3 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC16AC20DE0AAD00B4B6E3 /* RegisterVC.swift */; };
@@ -61,6 +63,8 @@
 		5FA7287620E0AED600F6B524 /* ntp832.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ntp832.pdf; sourceTree = "<group>"; };
 		5FA7288020E0B93D00F6B524 /* pvd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pvd.pdf; sourceTree = "<group>"; };
 		5FA7288220E1109A00F6B524 /* DetalleEmpresaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetalleEmpresaTableViewController.swift; path = /Users/onvika/Desktop/TFG/TFG/Controller/DetalleEmpresaTableViewController.swift; sourceTree = "<absolute>"; };
+		5FC1E54520E1EA9C005DC09E /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		5FC1E54720E1ECEB005DC09E /* CalendarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioViewController.swift; sourceTree = "<group>"; };
 		5FE6926D20DE8BDC008CC85E /* EmpresaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresaViewController.swift; sourceTree = "<group>"; };
 		5FE6926F20DE8F8B008CC85E /* EmpresaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresaCell.swift; sourceTree = "<group>"; };
 		5FFC16AC20DE0AAD00B4B6E3 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				5FA7286820DFFE3000F6B524 /* ReglamentoCell.swift */,
 				5F7A194E20DF7004006B2492 /* ProfileCell.swift */,
 				5FE6926F20DE8F8B008CC85E /* EmpresaCell.swift */,
+				5FC1E54520E1EA9C005DC09E /* CalendarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				5F7A194C20DF6DAE006B2492 /* PerfilViewController.swift */,
 				5FA7286C20E0AA1400F6B524 /* ReglamentoDetailVC.swift */,
 				5FA7286A20E0027A00F6B524 /* ReglamentoVC.swift */,
+				5FC1E54720E1ECEB005DC09E /* CalendarioViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TFG/Pods-TFG-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -309,6 +316,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -339,9 +347,11 @@
 				5FFC16AD20DE0AAD00B4B6E3 /* RegisterVC.swift in Sources */,
 				5F7A194D20DF6DAE006B2492 /* PerfilViewController.swift in Sources */,
 				5FFCCE9520DDDFD8001C9F7B /* Tecnico.swift in Sources */,
+				5FC1E54820E1ECEB005DC09E /* CalendarioViewController.swift in Sources */,
 				5FA7288320E1109A00F6B524 /* DetalleEmpresaTableViewController.swift in Sources */,
 				5FFC16AF20DE0E9500B4B6E3 /* HomeViewController.swift in Sources */,
 				5FA7286D20E0AA1400F6B524 /* ReglamentoDetailVC.swift in Sources */,
+				5FC1E54620E1EA9C005DC09E /* CalendarCell.swift in Sources */,
 				5FA7286520DFE66200F6B524 /* Reglamento.swift in Sources */,
 				5F7A194F20DF7004006B2492 /* ProfileCell.swift in Sources */,
 				5FFCCEA220DE04F3001C9F7B /* LoginVC.swift in Sources */,

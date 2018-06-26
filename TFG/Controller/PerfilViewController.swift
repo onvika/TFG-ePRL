@@ -15,11 +15,8 @@ import SVProgressHUD
 class PerfilViewController: UIViewController {
     
     @IBOutlet weak var profileTableView: UITableView!
-    
     @IBOutlet weak var imgProfile: UIImageView!
-    
     @IBOutlet weak var nombreTecTextField: UILabel!
-    
     @IBOutlet weak var posicionTextField: UILabel!
     
     
@@ -37,8 +34,8 @@ class PerfilViewController: UIViewController {
     {
         super.viewWillAppear(true)
         setStyleCirculeForImage(img: imgProfile)
-        nombreTecTextField.text = "Pepito Perez"
-        posicionTextField.text = "Ingeniero Superior"
+        nombreTecTextField.text = "Onhilda Benítez"
+        posicionTextField.text = "Técnico Superior"
     }
     
     func setStyleCirculeForImage(img: UIImageView)
@@ -79,15 +76,33 @@ extension PerfilViewController: UITableViewDelegate, UITableViewDataSource
         return elementosTecnico.count
     }
     
+    //Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "celdaPerfil"
+        {
+            let destinoVC = segue.destination as! RegisterVC
+            
+            datos.append(destinoVC.apellidoTextField.text!)
+            datos.append(destinoVC.correoTextField.text!)
+            datos.append("⋆---------------------⋆")
+            datos.append(destinoVC.especialidadTextField.text!)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         //let valor = datos[indexPath.row]
         let elemento = elementosTecnico[indexPath.row]
+        //let d = datos[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaPerfil") as! ProfileCell
         
-        cell.setElemento(elemento: elemento, datos: "................")
+        //cell.setElemento(elemento: elemento, datos: d)
+        cell.seccion.text = elemento
+        cell.datosTecnico.text = "xXxxxXxxX"
         
         return cell
     }
+
 }
 
